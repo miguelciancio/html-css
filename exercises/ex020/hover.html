@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+            > esse simbolo significa filho, ou seja, um paragrafo que esta dentro de uma div ... um paragrafo que e filho de uma div.
+            Assim, nao aplica para todas as div do seu documento.
+        */
+        div > p {
+            display: none;
+        }
+
+        /*
+            O paragrafo que esta dentro de uma div ao passar o mouse sobre ele.
+            Aqui usamos o conceito de uma pseudo-class (:) junto com o de uma child (>).
+        */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover{
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui.
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do texto.</p>
+</body>
+</html>
