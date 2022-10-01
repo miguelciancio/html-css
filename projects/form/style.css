@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*
+    General Config.
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+    Body
+*/
+body {
+    position: absolute;
+    background-color: #D3E6FD;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+    Main
+*/
+
+main {
+    position: relative;
+    background-color: #fff;
+    width: 80%;
+    padding: 30px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: normal;
+    color: #454fd6;
+    margin-bottom: 35px;
+}
+
+/*
+    Form
+*/
+::placeholder {
+    color: #454fd6;
+    font-weight: bolder;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea{
+    display: inline;
+    color: #454fd6;
+    width: 49.7%;
+    padding: 18px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input#ifname, input#ilname {
+    background-color: #E8E9FF;
+    border: none;
+    border-radius: 5px;
+    float: center;
+
+}
+
+input#ilname {
+    float: right;
+}
+
+input#iemail, input#itele {
+    background-color: #DDE1FF;
+    border: none;
+    border-radius: 5px;
+    float: center;
+}
+
+input#itele {
+    float: right;
+}
+
+input#iaddress {
+    background-color: #C7CDFD;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    background-color: #A4B1FC;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+input#btn-submit {
+    position: relative;
+    background-color: #233EF6;
+    color: #fff;
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 50px;
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    cursor: pointer;
+}
+
+/*
+    Greetings message
+*/
+
+div#last-msg {
+    font-size: 0.8rem;
+    color: green;
+}
+
+
+

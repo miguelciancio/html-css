@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Get In Touch</h1>
+         
+        <form action="register.php" method="post">
+            <p>
+                <input type="text" name="fname" id="ifname" placeholder="First Name" minlength="0" maxlength="20" size="25">
+                <input type="text" name="lname" id="ilname" placeholder="Last Name" minlength="0" maxlength="40" size="25">
+            </p>
+
+            <p>
+                <input type="email" name="email" id="iemail" placeholder="Email">
+                <input type="tel" name="tele" id="itele" placeholder="Phone">
+            </p>
+
+            <p>
+                <input type="text" name="address" id="iaddress" placeholder="Address">
+            </p>
+
+            <p>
+                <textarea name="msg" id="imsg" rows="3" placeholder="Type your message here"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" id="btn-submit" value="Submit">
+            </p>
+        </form>
+        
+        <div id="last-msg">
+            Thanks for submitting!
+        </div>
+        
+    </main>
+</body>
+</html>
