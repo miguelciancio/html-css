@@ -3,8 +3,10 @@
 
  Projetos criados:
  <p>
-  <a href="https://miguelciancio.github.io/projeto-android/"> Projeto Android
-  <a href="https://miguelciancio.github.io/projeto-cordel/"> Projeto Cordel
-  <a href="https://miguelciancio.github.io/projeto-social/"> Projeto Social
+  <ul>
+   <a href="https://miguelciancio.github.io/projeto-android/"> Projeto Android
+   <a href="https://miguelciancio.github.io/projeto-cordel/"> Projeto Cordel
+   <a href="https://miguelciancio.github.io/projeto-social/"> Projeto Social
+  </ul>
  </p>
 
