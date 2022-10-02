@@ -4,9 +4,9 @@
  Projetos criados:
  <p>
   <ul>
-   <a href="https://miguelciancio.github.io/projeto-android/"> Projeto Android
-   <a href="https://miguelciancio.github.io/projeto-cordel/"> Projeto Cordel
-   <a href="https://miguelciancio.github.io/projeto-social/"> Projeto Social
+   <li><a href="https://miguelciancio.github.io/projeto-android/"> Projeto Android</li>
+   <li><a href="https://miguelciancio.github.io/projeto-cordel/"> Projeto Cordel</li>
+   <li><a href="https://miguelciancio.github.io/projeto-social/"> Projeto Social</li>
   </ul>
  </p>
 
