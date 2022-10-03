@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <!-- Icone de menu do Google -->
+    <!-- Chamadas de estilos: icone de menu do Google, estilos generico e estilos outras media queries  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <!-- CABECALHO -->
     <header>
         <!-- titulo principal -->
@@ -37,21 +38,29 @@
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit ullam blanditiis dicta, officiis dolor cupiditate obcaecati explicabo pariatur itaque earum fugit saepe incidunt quibusdam iusto suscipit ipsa repellat magni? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, vel laborum fuga sapiente veniam itaque soluta asperiores cum commodi blanditiis nostrum nihil dolor facere dignissimos dolorem magnam aut pariatur similique!</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa qui aut incidunt sapiente praesentium hic consequuntur maxime ducimus corrupti, reiciendis sed enim eveniet odio blanditiis rem dolor minima accusantium esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus accusamus eos, incidunt assumenda, ipsam numquam, explicabo optio ad animi nesciunt dolores doloremque rerum tempora aliquid doloribus illum veniam. Necessitatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa qui aut incidunt sapiente praesentium hic consequuntur maxime ducimus corrupti, reiciendis sed enim eveniet odio blanditiis rem dolor minima accusantium esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus accusamus eos, incidunt assumenda, ipsam numquam, explicabo optio ad animi nesciunt dolores doloremque rerum tempora aliquid doloribus illum veniam.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores, commodi odio mollitia minima esse dolor! Eligendi, a culpa incidunt, vel neque eius cupiditate aperiam provident enim in ipsum tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro? Suscipit illum repellendus quisquam, velit a nesciunt quas, natus ab, cupiditate ullam nulla laboriosam. Ipsam laudantium iste cumque reiciendis laboriosam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores, commodi odio mollitia minima esse dolor! Eligendi, a culpa incidunt, vel neque eius cupiditate aperiam provident enim in ipsum tempore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro? Suscipit illum repellendus quisquam, velit a nesciunt quas, natus ab, cupiditate ullam nulla laboriosam. Ipsam laudantium iste cumque reiciendis laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id porro, deleniti debitis distinctio, laborum assumenda amet, veniam quos doloribus vero quibusdam nostrum! Doloribus ullam facere ipsam officiis quaerat rem impedit.</p>
         </article>
     </main>
 
     <!-- Script -->
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            };
+        };
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none';
             } else {
                 itens.style.display = 'block';
             };
-        }
+        };
     </script>
 </body>
 </html>

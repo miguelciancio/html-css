@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*
+    Typical Device Breakpoints - according to W3C 2nd October, 2022.
+--------------------------------------------------------------------------------------------------
+        X-Smalls Screens (phones) - until 600px.
+        Small Devices (portrait tablets and large phones) - from 600px until 768px.
+        Medium Devices (landscape tablets) - from 768px until 992px.
+        Large Devices (laptops/desktops) - from 992px until 1200px.
+        X-Large Devices (large laptops, large desktops and TV) - above 1200px.
+--------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (min-width: 768px) {
+    /* Menu */
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    /* Conteudo Principal */
+    main {
+        width: 800px;
+    }
+}
