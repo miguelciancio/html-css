@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*
+            Justify-content
+
+            E possivel fazer o alinhamento dos items nos dois eixos de um flexbox container. 
+            
+            O justify-content faz o alinhamento em relacao ao main-axis. 
+            Ele possui os seguintes valores:
+                . flex-start - vai pegar o main-start e grudara o primeiro item nele - e todos os demais items ficarao grudados nele - e caso exista algum espaco livre, ele ficara sempre no final do eixo principal, perto do main-end.
+                . flex-end - vai pegar o main-end e grudara o ultimo item nele - e todos os demais items ficarao grudados nele - e caso exista algum espaco livre, ele ficara sempre no inicio do eixo principal, perto do main-start.
+                . center - ele calcula exatamente o centro do container e colocara todos os items juntos nesse center e os espacos em branco vao ser distribuidos iguais tanto no main-start quanto no main-end.
+                . space-between - ele coloca o primeiro item no main-start e o ultimo item no main-end - todos os outros items vao estar no meio com o espacamento igual.
+                . space-evenly - ele nao gruda o primeiro e o ultimo elemento nas extremidades do container. O que ele faz e colocar todos os elementos dispostos dentro do container de forma que, tanto antes quanto depois de todos os items, os espacamentos sejam iguais. Incluindo antes do primeiro item e depois do ultimo item tambem.
+                . space-around - faz uma conta diferente. Ele pega o espaco util do container e divide pelo numero da quantidade de items que ha dentro desse containers, centralizando-os assim de acordo esse resultado. O resultado disso e que antes do primeiro elemento e depois do ultimo, cada item tera apenas um espaco. Ja entre os elementos, havera dois espacos diferentes - um pertencente a cada elemento.
+
+            Align-items
+            
+            Tambem existe alinhamento no eixo transversal, no cross-axis. Isso se da pelo align-items.
+            Para alinhar no cross-axis tem que dar uma aumentada na altura do container.
+
+            Ele tem os seguintes valores:
+                . stretch - Valor padrao. Basicamente, ele estica o conteudo dos elementos - dos items - no sentido do cross-axis.
+                . flex-start - vai pegar o cross-start e gruda os elementos nele - deixando os espacos em branco (vazio) logo abaixo dele no sentido para o cross-end.
+                . flex-end - vai pegar o cross-end e grudara o ultimo item nele - e todos os demais items ficarao grudados nele - e caso exista algum espaco livre, ele ficara sempre no inicio do eixo transversal, perto do cross-start.
+                . center - ele calcula exatamente o centro do container e colocara todos os items juntos nesse center e os espacos em branco vao ser distribuidos iguais tanto no cross-start quanto no cross-end.
+            
+            O align items nao tem as opcoes de espacamento - space-between, space-evenly, e space-around - existe uma outra propriedade que faz isso.
+
+        */
+        .container {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
