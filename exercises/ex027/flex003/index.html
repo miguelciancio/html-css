@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+        /*
+            Flex-wrap
+
+            O encolhimento dos items dentro dos containers vai depender diretamente da capacidade de encolhimento dele mesmo. Depende do conteudo.
+            Se for um texto com palavras muito grande, ele vai ficar do tamanho da palavra mais longa.
+
+            Importante saber que a quebra do wrap e sempre no eixo transversal (no cross-axis).
+
+            Tem os seguintes valores:
+                . nowrap - valor padrao e nao quebra conteudo.
+                . wrap - quebra item no sentido do eixo transversal (cross-axis).
+                . wrap-reverse - quebra item no sentido oposto do eixo transversal (cross-axis).
+
+            Flex-flow
+
+            O flex-flow e uma juncao entre o flex-direction e o flex-wrap. Basicemente, e um shorthand simplificando de duas declaracoes para uma so.
+        */
+    .container {
+        background-color: lightsalmon;
+        height: 100px;
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .item {
+        background-color: lightblue;
+
+        border: 1px solid black;
+
+        text-align: center;
+
+        flex: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item">Exemplo de bloco A</div>
+    <div class="item">Exemplo de bloco B</div>
+    <div class="item">Exemplo de bloco C</div>
+    <div class="item">Exemplo de bloco D</div>
+    <div class="item">Exemplo de bloco E</div>
+    <div class="item">Exemplo de bloco F</div>
+    <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
