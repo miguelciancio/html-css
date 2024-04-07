@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        /*
+            Direcoes no flexbox - No Pai (Ou Container) usa-se o flex-direction, que, basicamente, possui 4 valores:
+                . row.
+                . row-reverse.
+                . column.
+                . column-reverse.
+            
+            Cada valor possui eixos diferentes, ou seja, ordem em que os items (elementos) dentro dele sera colocado.
+                . row - main-axis (left to right), and cross-axis (top to bottom).
+                . row-reverse - main-axis (right to left), and cross-axis (top to bottom).
+                . column - main-axis (top to bottom), and cross-axis (left to right).
+                . column-reverse - main-axis (bottom to top), and cross-axis (left to right).
+        */
         .container {
             background-color: lightsalmon;
 
@@ -14,11 +27,12 @@
 
         .item {
             background-color: lightblue;
+            
+            padding: 10px;
             border: 1px solid black;
 
             text-align: center;
 
-            flex: auto;
         }
     </style>
 </head>
