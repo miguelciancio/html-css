@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centralizado</title>
+    <style>
+        /*
+            CSS Flexible Box Module
+
+            Propriedades do flex-container.
+
+            Alinhamento de Conteudo Empacotado.
+
+            Basicamente e aquele que se quebra quando se usa a configuracao wrap.
+
+            Quando utlizamos o flex-flow wrap vai haver uma quebra para poder acomodar todos os elementos, expandindo o container pai em direcao ao cross-end do cross-axis. Com isso, na maioria das vezes para acompanhar outros conteudos laterais existe uma ampliacao mais do seu container pai de novo no sentido do cross-axis. 
+
+            Para decidir o que vai acontecer com esse espaco em branco a mais utiliza-se o align-content.
+
+            Resumindo:
+                . justify-content: alinha os itens dentro ao main-axis.
+                . align-items: alinha os itens dentro ao cross-axis.
+                . align-content: alinha os elementos no cross-axis mas quando eles estao empacotados.
+
+
+            O valor padrao do align-content e o stretch. Ele divide o valor do cross-axis pela quantidade de quebras de linhas/colunas e estica os itens - no sentido do cross-axis ofc - para que eles caibam ali dentro perfeitamente.
+
+            O valor flex-start pega todos os elementos e grudara no cross-start, reservando um espaco em branco em direcao ao cross-end.
+
+            O valor flex-end pega todos os elementos e grudara no cross-end, reservando um espaco em branco em direcao ao cross-start.
+
+            O valor center pega todos os elementos quebrados e criara espacos em branco iguais no cross-start e cross-end alinhando os conteudos no meio.
+
+            O valor space-between pega os primeiros elementos e colocara perto do cross-start, depois pegara os ultimos elementos e colocara perto do cross-end e por fim divide igualmente o espaco no meio igualmente entre esses elementos.
+
+            O valor space-evenly e o mais simetrico na minha humilde opiniao e colocara espaco no cross-start, cross-end e entre os elementos de forma simetrica - milimetricamente calculado.
+
+            O valor space-around faz basicamente bem parecido como o stretch. Divide o quebramento e coloca os itens centralizados dentro de seu espaco.
+        */
+        .container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            
+            height: 400px;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+    </div>
+</body>
+</html>
