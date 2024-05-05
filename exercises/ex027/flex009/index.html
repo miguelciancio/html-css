@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*
+            flex-basis.
+
+            O flex-basis auto nos da a largura dos itens para cada elemento e dada atraves do tamanho do seu conteudo.
+
+            O flex-basis aceita valores em pixels tambem. Por exemplo, se voce coloca um valorde 200px, isso faz com que todos os elementos tenham esse tamanho independentemente do seu conteudo. So que, caso nao exista tamanho o suficiente para acomodar todos os elementos com esses 200px, ele ira diminuir de forma igualitariamente.
+        */
+        .container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+            
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Outro Conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteudo maior ainda, que vai ocupar mais espaco.</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
