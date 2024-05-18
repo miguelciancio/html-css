@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*
+            Simplificando com Flex.
+
+            A propriedade flex vem para simplificar o uso do flex-basis, flex-grow e o flex-shrink com a propriedade flex.
+
+            Primeiro valor da propriedade flex e o flez grow, a segunda e o flex-shrink e o ultimo o flex-basis - flex = flex-grow flex-shrink flex-basis.
+
+            flex: 0 1 auto - se nao colocar nada! Valores padrao de cada um das outras propriedades.
+            flex: initial - E a mesma coisa que declarar os valores citados anteriormente (0 1 auto).
+            
+            flex: 0 0 auto - Deixa os elementos nao flexiveis e o tamanha deles depende do seu conteudo. Nao e nada flexivel.
+            flex: none - E a mesma coisa que declarar os valores citados acima anteriormente (0 0 auto).
+            
+            flex: 1 1 auto - E justamente o oposto do 0 0 auto. Voce pode crescer a vontade e diminuir a vontade o elemente e o seu limite sera o tamanho natural do conteudo.
+            flex: auto - E a mesma coisa que declarar os valores citados acima anteriormente (1 1 auto).
+
+            flex: 3 - o flex-grow desse elemento sera 3 e os demais valores serao os padronizados.
+            flex: 3 1 auto - e a mesma coisa que declarar os valores citado acima anteriormente (3).
+
+        */
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+
+        }
+
+        div#cxA{
+            flex: 1 0 200px;
+        }
+
+        div#cxB{
+            flex: 1 1 150px;
+        }
+
+        div#cxC{
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
