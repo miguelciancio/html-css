@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*
+            Crescer ou Diminuir.
+
+            E muito importante voce colocar antes o valor de "nowrap" para os elementos flex que voce queira utilizar para crescer ou diminuir pois depende se o container vai quebrar ou nao. Se o container quebra, ele nao funcionara.
+
+            O valor padrao do flex-shrink e de 1 (pode diminuir) e o flex-grow e de 0 (nao pode crescer).
+
+            Se voce quer elementos autamentes fluidos (que tanto crescem quanto diminuem) tem que setar 1 para ambos flex-shrink and flex-grow.
+        */
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+
+            text-align: center;
+
+            flex-basis: 200px;
+        }
+
+        div#cxA {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC {
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
